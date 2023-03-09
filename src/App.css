@@ -1,42 +1,307 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --flex: flex;
+  --center: center;
+  --between: space-between;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  width: 100vw;
+  height: 100vh;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.squeeze-container {
+  margin-left: 200px;
+  margin-right: 200px;
+  background: rgb(135, 135, 135);
+  background: linear-gradient(0deg, rgba(135, 135, 135, 1) 0%, rgba(66, 66, 66, 1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header-container {
+  display: var(--flex);
+  align-items: var(--center);
+  justify-content: var(--between);
+  background: rgb(118, 118, 118);
+  background: linear-gradient(0deg, rgba(118, 118, 118, 1) 0%, rgba(66, 66, 66, 1) 100%);
 }
 
-.card {
-  padding: 2em;
+.navbar-left {
+  display: var(--flex);
+  align-items: var(--center);
+  width: 100%;
+  height: 15%;
+
 }
 
-.read-the-docs {
-  color: #888;
+.navbar-right {
+  display: var(--flex);
+  align-items: var(--center);
+}
+
+.navbar-title {
+  color: white;
+  font-size: 3rem;
+  padding: 30px 40px;
+}
+
+.about-me-container {
+  display: var(--flex);
+  align-items: var(--center);
+  justify-content: var(--between);
+  color: white;
+}
+
+.my-picture-container {
+  display: var(--flex);
+  align-items: var(--center);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #555555, #474747);
+  box-shadow: 5px 5px 30px #4e4e4e,
+      -5px -5px 30px #505050;
+  margin: 30px 75px
+}
+
+.my-picture-container img {
+  border-radius: 50%;
+  width: 19rem;
+  height: 20rem;
+}
+
+.my-name-position-container {
+  text-align: var(--center);
+  margin: 60px 60px 0px 0px
+}
+
+.my-name-heading {
+  text-align: var(--center);
+  font-size: 4rem;
+  font-weight: 600
+}
+
+.position-heading {
+  text-align: var(--center);
+  font-weight: 100;
+}
+
+.about-me {
+  padding: 30px 40px 0px 40px;
+  font-size: 1.3rem;
+  text-align: var(--center);
+  margin-bottom: 50px;
+
+}
+
+.about-me-heading {}
+
+.about-me-paragraph {}
+
+.skills-container {
+  margin-top: 3rem;
+  display: var(--flex);
+  justify-content: var(--center);
+}
+
+.hard-skills {
+  text-align: var(--center);
+}
+
+.frameworks-soft-skills-container {
+  display: var(--flex);
+  justify-content: var(--between);
+  margin-top: 4rem;
+
+}
+
+.html-icon,
+.javascript-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.facebook-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.instargram-icon {
+  width: 40px;
+  height: 42px;
+}
+
+.github-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.css-icon {
+  width: 90px;
+  height: 105px;
+  margin-top: 30px;
+  margin-left: 120px;
+  margin-right: 180px;
+}
+
+.react-icon {
+  width: 120px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.git-github-icon {
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+
+}
+
+.framework-soft-skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+
+}
+
+.frameworks {
+  margin-top: 0px;
+}
+
+
+.tailwind-icon {
+  margin-top: 30px;
+  width: 180px;
+  height: 100px;
+}
+
+.soft-skills {
+  margin-top: 0px;
+}
+
+.soft-skills p {
+  margin-top: 5px;
+  line-height: 35px;
+  text-align: var(--center);
+  font-size: 1.3rem;
+}
+
+.container-infomation {
+  margin-top: 5rem;
+  color: white;
+}
+
+.infomation {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-top: 5rem;
+  margin-left: 23rem;
+}
+
+.infomation-title {
+  font-size: 5rem;
+}
+
+.icon-map {
+  position: absolute;
+  top: 110px;
+  left: -35px;
+}
+
+.icon-phone-call {
+  position: absolute;
+  top: 215px;
+  left: -35px;
+}
+
+.icon-email {
+  position: absolute;
+  width: 35px;
+  top: 275px;
+  left: -40px;
+}
+
+.icon-github {
+  position: absolute;
+  width: 30px;
+  top: 330px;
+  left: -35px;
+}
+
+.line-contact {
+  height: 2px;
+  width: 21%;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 249, 255, 1) 100%);
+  margin: 2px;
+}
+
+.address,
+.phone-number,
+.email,
+.github {
+  font-size: 1.2rem;
+  margin-top: 10px
+}
+
+.github-link {
+  text-decoration: none;
+  color: white;
+}
+
+.container-education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-title {
+  font-size: 5rem;
+}
+
+.education {}
+
+.line-education {
+  height: 2px;
+  width: 50%;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 249, 255, 1) 100%);
+  margin: 2px;
+}
+
+.school-list {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer-container {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  background: rgb(118, 118, 118);
+  background: linear-gradient(180deg, rgba(118, 118, 118, 1) 0%, rgba(66, 66, 66, 1) 100%);
+  width: 100%;
+  height: 20%;
+}
+
+.container-footerPage {
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4em;
+}
+
+.container-footerPage p {
+  color: var(--secondary-text-color);
+}
+
+
+.container-footerPage :first-child {
+  display: flex;
+  gap: 1em;
 }
