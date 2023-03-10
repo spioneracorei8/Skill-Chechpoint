@@ -1,9 +1,10 @@
 import '../App.css'
+import Itsme from "../assets/ItsMe.jpg"
 export function AboutMe () {
     return (
         <div className="about-me-container">
             <div className="my-picture-container">
-                <img src=".\src\assets\It's me.jpg" alt="It's me" />
+                <img src={Itsme} alt="It's me" />
             </div>
             <div className="my-name-position-container">
                 <h1 className="my-name-heading">
